@@ -1,0 +1,175 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    background: #f4f4f4;
+    margin: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brand img{
+    background: no-repeat;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.content {
+    margin: 1rem auto 5rem auto;
+    text-align: center;
+}
+
+.content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.content .text {
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-link:link {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.nav-link:active {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+hr {
+    border-color: #555;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.error {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.success {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+/* Small Screens */
+@media (max-width: 560px) {
+    .content {
+        margin: 0 auto 0 auto;
+    }
+
+    .content .logo {
+        height: 75%;
+        width: 75%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .grid-3,
+    .grid-2 {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        margin: 0 auto 0 auto;
+    }
+
+    .services div {
+        border-bottom: #333 dashed 1px;
+        padding: 1rem 1rem;
+    }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+    .content .title, .content .text {
+        display: none;
+    }
+
+    .content {
+        margin: 0 auto 0 auto;
+    }
+
+    .content .logo {
+        height: 75%;
+        width: 75%;
+    }
+}
+
