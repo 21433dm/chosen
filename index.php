@@ -16,9 +16,14 @@ require "includes/nav.inc.php";
             elseif (isset($_SESSION['userId']) || isset($_SESSION['userUid'])) {
                 echo "<p class='success'>You are logged in!</p>";
             }
-            ?>
-            <img src="img/rifleman.jpg" class="logo" alt="Rifleman">
-        </div>  
+            if (isset($_GET['fail'])) {
+                if ($_GET['fail'] == "no") {
+                    echo '<p class="error">You are not logged in!<p>';
+            }
+        }
+    ?>
+<img src="img/rifleman.jpg" class="logo" alt="Rifleman">
+</div>  
       
     <!-- Some interesting links -->
     <section class="services">
