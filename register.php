@@ -64,9 +64,6 @@ require "includes/nav.inc.php";
                                     </div>
                                 </div>
                             </form>
-                            <?php
-                                
-                            ?>
                         </div>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ if (isset($_POST['register'])) {
         exit();
     }
     else {
-        $query = "SELECT username FROM users WHERE username=?";
+        $query = "SELECT username FROM users WHERE username=?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $query)) {
             header("Location: ../register.php?error=sqlerror");
@@ -46,7 +46,7 @@ if (isset($_POST['register'])) {
                 exit();
             }
             else {
-               $query = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)";
+               $query = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?);";
                $stmt = mysqli_stmt_init($conn);
                if (!mysqli_stmt_prepare($stmt, $query)) {
                 header("Location: ../register.php?error=sqlerror");
