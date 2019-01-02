@@ -1,12 +1,12 @@
 <?php
 require 'database/config.php';
 
-$query = "SELECT * FROM users";
+$query = "SELECT * FROM users;";
 $result = mysqli_query($conn, $query);
 if (mysqli_fetch_assoc($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $id = $row['id'];
-        $queryImg = "SELECT * FROM profileimg WHERE userid='$id'";
+        $queryImg = "SELECT * FROM profileimg WHERE userid='$id';";
         $resultImg = mysqli_query($conn, $queryImg);
         while ($rowImg = mysqli_fetch_assoc($resultImg)) {
             echo "<div class='container'>
