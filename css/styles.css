@@ -143,6 +143,8 @@ footer p {
     color: green;
 }
 
+
+
 /* Small Screens */
 @media (max-width: 560px) {
     .content {
