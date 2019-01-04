@@ -29,22 +29,14 @@ require "includes/nav.inc.php";
                         <form method="POST" action="admin/login.php">
                             <div class="form-group row">    
                                 <div class="col-md-10 offset-md-1">
-                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email address" autofocus>
+                                    <label for="email" name="email">Email address</label>
+                                    <input id="email" type="text" class="form-control" name="email" autofocus>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-10 offset-md-1">
-                                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="remember" id="remember">
-                                        <label class="form-check-label" for="remember">
-                                        Remember Me
-                                        </label>
-                                    </div>
+                                    <label for="password" name="password">Password</label>
+                                    <input id="password" type="password" class="form-control" name="password">
                                 </div>
                             </div>
                                 <div class="form-group row mb-0">

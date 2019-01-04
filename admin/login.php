@@ -31,7 +31,6 @@ if (isset($_POST['login'])) {
                     session_start();
                     $_SESSION['userId'] = $row['id'];
                     $_SESSION['userUid'] = $row['name'];
-
                     header("Location: ../profile.php?login=success");
                     exit();
                 }

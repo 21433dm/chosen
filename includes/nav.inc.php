@@ -16,6 +16,7 @@ session_start();
     elseif (isset($_SESSION['userId']) || isset($_SESSION['userUid'])) {
            echo '<a class="nav-link" href="profile.php">HOME</a>
                  <a class="nav-link" href="posts.php">POSTS</a>
+                 <a class="nav-link" href="gallery.php">GALLERY</a>
                  <a class="nav-link" href="admin/logout.php">LOGOUT</a>';        
        }
     ?>    
